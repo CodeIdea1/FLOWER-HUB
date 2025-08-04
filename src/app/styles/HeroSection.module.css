@@ -11,10 +11,10 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -100px;
+    bottom: -80px;
     background: linear-gradient(340deg, #798a70, #6d7f66);
-    width: 370px;
-    height: 370px;
+    width: 290px;
+    height: 290px;
     border-radius: 50%;
     z-index: -1;
 }
@@ -63,10 +63,10 @@
 
 
 .statice {
-    width: 230px;
+    width: 200px;
     rotate: -30deg;
     position: absolute;
-    bottom: 260px !important;
+    bottom: 228px !important;
     right: 200px;
     z-index: 99999 !important;
 }
@@ -194,15 +194,15 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: -60px;
+    bottom: -36px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
 }
 
 .scrollIcon {
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
     color: white;
     opacity: 0.7;
     animation: bounce 2s infinite;
