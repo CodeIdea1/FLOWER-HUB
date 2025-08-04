@@ -1,0 +1,560 @@
+.heroSection {
+    position: relative;
+    width: 100%;
+    max-height: 120vh;
+    background: linear-gradient(333deg, #5a6c55, #b8c9a7);
+    margin-bottom: 100px !important;
+}
+
+.heroSection::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100px;
+    background: linear-gradient(340deg, #798a70, #6d7f66);
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+.heroSection .container {
+    position: relative;
+    width: 1200px !important;
+    margin: 0 auto;
+    padding: 100px 0px;
+    height: 100%;
+}
+
+
+
+.heroSection .leafLayer {
+    position: relative;
+    width: 150px;
+    height: auto !important;
+}
+
+.heroSection .leaf {
+    height: auto !important;
+    z-index: 99;
+    width: 150px;
+    left: 770px !important;
+    top: -100px !important;
+    position: absolute;
+}
+
+
+.flowerLayer {
+    position: absolute;
+    bottom: 600px !important;
+    width: 460px;
+    z-index: 9;
+}
+
+.flowerImage {
+    width: 460px;
+    height: auto !important;
+    rotate: 20deg;
+    left: 5%;
+
+}
+
+
+.statice {
+    width: 230px;
+    rotate: -30deg;
+    position: absolute;
+    bottom: 260px !important;
+    right: 200px;
+    z-index: 99999 !important;
+}
+
+.staticeImage {
+    width: 200px;
+    height: auto !important;
+    filter: drop-shadow(30px 30px 15px rgba(0, 0, 0, 0.283));
+}
+
+.mainTitle {
+    font-weight: 100;
+    font-size: 250px;
+    margin: auto !important;
+    transform: scaleY(1.1);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.subtitle {
+    width: 350px;
+    position: relative;
+    left: 50%;
+    border-bottom: 2px solid #edededb7;
+}
+
+.floralText,
+.colorText,
+.combinationsText {
+    color: #ededed;
+    font-weight: 600;
+    margin: 5px 0;
+    line-height: .9;
+}
+
+.floralText,
+.colorText,
+.combinationsText {
+    font-size: 28px;
+}
+
+
+
+.methodsButton {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    left: 0%;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 9999999;
+}
+
+.methodsButton:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.KindsButton {
+    background-color: #6f638d;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0px 10px;
+    color: rgba(255, 255, 255, 0.861);
+    font-weight: 600;
+    position: absolute;
+    bottom: -40px;
+    font-size: 12px;
+    margin-left: 40px;
+}
+
+.KindsButton .num {
+    background-color: white;
+    color: #6f638d;
+    position: absolute;
+    left: -40px;
+    padding: 7px 12px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.plusIcon {
+    font-size: 15px;
+    margin-top: 7px;
+    font-weight: 800;
+}
+
+.smallText1 {
+    position: absolute;
+    top: 16%;
+    right: 15%;
+    color: white;
+    font-size: 11px;
+    line-height: 1.6;
+    opacity: 0.8;
+    z-index: 5;
+}
+
+.smallText2 {
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    color: white;
+    font-size: 11px;
+    line-height: 1.6;
+    opacity: 0.8;
+    z-index: 5;
+}
+
+.scrollIndicator {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.scrollIcon {
+    width: 48px;
+    height: 48px;
+    color: white;
+    opacity: 0.7;
+    animation: bounce 2s infinite;
+    margin-bottom: -30px;
+}
+
+
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .heroSection {
+        height: 55vh;
+        max-height: 55vh;
+    }
+
+    .heroSection .container {
+        width: 90% !important;
+    }
+
+    .heroSection::before {
+        bottom: -50px;
+        width: 150px;
+        height: 150px;
+        background: linear-gradient(340deg, #66785f, #72836a);
+
+    }
+
+    .KindsButton {
+        font-size: 10px;
+    }
+
+
+
+    .plusIcon {
+        font-size: 4px !important;
+        margin-top: 0px;
+    }
+
+    .num {
+        font-size: 13px !important;
+    }
+
+    .heroSection .leafLayer {
+        position: relative;
+        width: 150px;
+        height: auto !important;
+    }
+
+    .heroSection .leaf {
+        display: none;
+    }
+
+    .flowerLayer {
+        position: absolute;
+        bottom: 320px !important;
+        width: 220px;
+        z-index: 9;
+    }
+
+    .flowerImage {
+        width: 220px;
+        height: auto !important;
+        rotate: 20deg;
+        left: -15% !important;
+
+    }
+
+    .methodsButton {
+        padding: 7px 15px;
+        font-size: 12px;
+        bottom: 10px;
+    }
+
+
+    .scrollIndicator {
+        bottom: -26px;
+    }
+
+    .scrollIcon {
+        width: 32px;
+        height: 32px;
+        margin-bottom: -22px;
+    }
+
+
+
+    .statice {
+        width: 95px;
+        rotate: -30deg;
+        position: absolute;
+        bottom: 108px !important;
+        right: 28px;
+    }
+
+    .staticeImage {
+        width: 59px;
+        height: auto !important;
+        filter: drop-shadow(30px 30px 15px rgba(0, 0, 0, 0.283));
+        z-index: 999;
+    }
+
+    .mainTitle {
+        font-size: clamp(4rem, 10vw, 5rem);
+        letter-spacing: 4px;
+    }
+
+    .content {
+        padding-top: 20%;
+    }
+
+    .smallText1,
+    .smallText2 {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .heroSection .container {
+        padding: 0 15px;
+    }
+
+    .mainTitle {
+        letter-spacing: 2px;
+    }
+
+    .floralText,
+    .colorText,
+    .combinationsText {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fallingContainer {
+    width: 50px;
+    height: 100vh;
+    position: absolute;
+    left: 37%;
+    top: -100px;
+    z-index: 5;
+}
+
+.fallingLeaf {
+    position: absolute;
+    width: 30px !important;
+    height: auto !important;
+    animation: fall1 8s ease-in-out infinite;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    transform-origin: center center;
+}
+
+.fallingContainer2 {
+    width: 50px;
+    height: 100vh;
+    position: absolute;
+    left: 25%;
+    top: -120px;
+    z-index: 4;
+}
+
+.fallingLeaf2 {
+    position: absolute;
+    width: 25px !important;
+    height: auto !important;
+    animation: fall2 9s ease-in-out infinite;
+    animation-delay: -2s;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.15));
+    transform-origin: center center;
+}
+
+.fallingContainer3 {
+    width: 50px;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    top: -80px;
+    z-index: 3;
+}
+
+.fallingLeaf3 {
+    position: absolute;
+    width: 35px !important;
+    height: auto !important;
+    animation: fall3 7s ease-in-out infinite;
+    animation-delay: -4s;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
+    transform-origin: center center;
+}
+
+@keyframes fall1 {
+    0% {
+        transform: translateX(0) translateY(-100px) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateX(0) translateY(0px) rotate(15deg);
+    }
+
+    20% {
+        transform: translateX(25px) translateY(15vh) rotate(-20deg);
+    }
+
+    35% {
+        transform: translateX(-35px) translateY(35vh) rotate(25deg);
+    }
+
+    50% {
+        transform: translateX(30px) translateY(50vh) rotate(-15deg);
+    }
+
+    65% {
+        transform: translateX(-20px) translateY(65vh) rotate(20deg);
+    }
+
+    80% {
+        transform: translateX(15px) translateY(80vh) rotate(-10deg);
+        opacity: 1;
+    }
+
+    95% {
+        transform: translateX(-5px) translateY(95vh) rotate(5deg);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateX(0) translateY(110vh) rotate(0deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fall2 {
+    0% {
+        transform: translateX(0) translateY(-120px) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+        transform: translateX(10px) translateY(0px) rotate(-12deg);
+    }
+
+    25% {
+        transform: translateX(-40px) translateY(20vh) rotate(18deg);
+    }
+
+    40% {
+        transform: translateX(45px) translateY(40vh) rotate(-25deg);
+    }
+
+    55% {
+        transform: translateX(-30px) translateY(55vh) rotate(20deg);
+    }
+
+    70% {
+        transform: translateX(25px) translateY(70vh) rotate(-15deg);
+    }
+
+    85% {
+        transform: translateX(-10px) translateY(85vh) rotate(8deg);
+        opacity: 0.8;
+    }
+
+    95% {
+        transform: translateX(5px) translateY(95vh) rotate(-5deg);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateX(0) translateY(110vh) rotate(0deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fall3 {
+    0% {
+        transform: translateX(0) translateY(-80px) rotate(0deg) scale(1);
+        opacity: 0;
+    }
+
+    12% {
+        opacity: 1;
+        transform: translateX(-15px) translateY(5vh) rotate(20deg) scale(1.1);
+    }
+
+    28% {
+        transform: translateX(50px) translateY(25vh) rotate(-30deg) scale(0.9);
+    }
+
+    45% {
+        transform: translateX(-45px) translateY(45vh) rotate(35deg) scale(1.05);
+    }
+
+    60% {
+        transform: translateX(35px) translateY(60vh) rotate(-20deg) scale(0.95);
+    }
+
+    75% {
+        transform: translateX(-25px) translateY(75vh) rotate(15deg) scale(1);
+        opacity: 1;
+    }
+
+    88% {
+        transform: translateX(10px) translateY(88vh) rotate(-8deg) scale(0.9);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateX(0) translateY(110vh) rotate(0deg) scale(0.8);
+        opacity: 0;
+    }
+}
+
+.fallingLeaf:hover,
+.fallingLeaf2:hover,
+.fallingLeaf3:hover {
+    animation-play-state: paused;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
