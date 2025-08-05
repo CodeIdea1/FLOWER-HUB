@@ -24,6 +24,13 @@
 @media (max-width: 700px) {
 
     .footerContent {
-        max-width: 90%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footerContent span {
+        width: 100%;
+        text-align: center;
+        margin: 6px 0;
     }
 }
